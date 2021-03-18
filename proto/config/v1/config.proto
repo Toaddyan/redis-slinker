@@ -1,0 +1,18 @@
+syntax="proto3";
+
+package config;
+
+option go_package = ".;configpb";
+
+message Server {
+    string port = 1; 
+}
+
+message Options {
+    string schema = 1; 
+    string prefix = 2;
+}
+message Redis {
+    string host = 1;
+    string port = 2;
+}
